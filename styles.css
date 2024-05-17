@@ -1,0 +1,45 @@
+/*Body är yttre delen av dokumentet, så all text som läggs i kommer hamna i center*/
+body {
+  text-align: center;
+  background-color: deepskyblue;
+}
+
+/*Behövs för att lägga styling på linjerna i elementet lines box*/
+#lines-box {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  li {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+}
+/*Behövs för att lägga styling på knapparna i elementet alphabet box*/
+#alphabet-box {
+  button {
+    width: 30px;
+    height: 40px;
+    background-color: coral;
+    font-family: Helvetica;
+    border: 1px solid #000;
+    margin: 1px;
+    /*Ändrar styling på muspekaren*/
+    cursor: pointer;
+  }
+  /*Ändrar färgen när muspekaren drar över en bokstav*/
+  button:hover {
+    background-color: aqua;
+  }
+
+  /*Ändrar och stänger av alfabets knapparna när dem använts en gång*/
+  button:disabled {
+    background-color: black;
+  }
+} /*Gör stylingen på "Nytt spel" knappen*/
+#new-game-btn {
+  width: 100px;
+  height: 40px;
+  font-family: Helvetica;
+  background-color: aqua;
+  border: 1px solid #000;
+}
